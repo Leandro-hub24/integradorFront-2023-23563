@@ -405,12 +405,12 @@ body {
         display: flex;
         flex-direction: column;
         top: 0;
-        right: 0;
+        left: 0;
         background-color: rgba(51, 58, 64, 1);
-        width: 100%;
+        width: 100vw;
         height: 60%;
         z-index: 5;
-        clip-path: circle(0.0% at 100% 0%);
+        clip-path: polygon(50% 0%, 100% 0, 100% 0, 0 0, 0 0);
         align-items: center;
         justify-content: space-evenly;
         transition: ease-in-out 0.7s;
@@ -429,15 +429,15 @@ body {
 
     .links2 {
 
-        clip-path: circle(150% at 100% 0%);
-        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+        -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
 
     .menu {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 35%;
+        width: 40%;
         margin-right: 0;
     }
 
@@ -452,7 +452,7 @@ body {
     .carousel-item img {
         height: 600px;
     }
-    
+
     .carousel-caption h5 {
         font-size: 1.5rem;
     }
