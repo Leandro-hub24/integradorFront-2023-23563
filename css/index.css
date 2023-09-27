@@ -545,6 +545,8 @@ body {
 
     .img1 {
         width: 60%;
+        justify-content: space-around;
+        margin-left: 0;
 
     }
 
@@ -598,6 +600,7 @@ body {
         display: block;
         right: 0;
         top: 0;
+        margin-right: 0;
     }
 
     /* carrousel */
