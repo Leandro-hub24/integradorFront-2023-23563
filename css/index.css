@@ -110,11 +110,12 @@ body {
     border: 1px solid white;
     border-radius: 5px;
     padding: 12px;
-    margin: 0.5rem 0 0.5rem 0.5rem;
+    margin: 0.5rem 0 0.5rem 1.5rem;
     text-decoration: none;
     color: white;
     background-color: rgb(41, 177, 70);
     font-size: 1.5rem;
+    z-index: 5;
 }
 
 .boton a:first-child {
