@@ -1,15 +1,15 @@
 // Menu
 
-let enlacesHeader = document.querySelector(".links1");
+let enlacesHeader = document.querySelector(".links1")
 /* let semaforo = true; */
 
 /* document.querySelectorAll(".menu")[0].addEventListener("click", function(){
     if(semaforo){
-        document.querySelectorAll(".menu")[0].style.color ="#000";
-        semaforo = false;
+        document.querySelectorAll(".menu")[0].style.color ="#000"
+        semaforo = false
     }else{
-        document.querySelectorAll(".menu")[0].style.color ="#fff";
-        semaforo = true;
+        document.querySelectorAll(".menu")[0].style.color ="#fff"
+        semaforo = true
     }
     enlacesHeader.classList.toggle("links2")
 }) */

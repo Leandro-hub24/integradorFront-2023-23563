@@ -82,19 +82,27 @@ body {
     object-fit: cover;
 }
 
+.carousel-caption {
+    right: 5%;
+    left: 40%;
+    margin-bottom: 11rem;
+}
+
 .carousel-caption h5 {
     font-size: 2.5rem;
+    text-align: end;
 }
 
 .carousel-caption p {
     font-size: 1.5rem;
+    text-align: end;
 }
 
 .boton {
     width: 100%;
     height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 
@@ -102,7 +110,7 @@ body {
     border: 1px solid white;
     border-radius: 5px;
     padding: 12px;
-    margin: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
     text-decoration: none;
     color: white;
     background-color: rgb(41, 177, 70);
@@ -396,6 +404,8 @@ body {
 
 @media screen and (max-width: 1300px){
 
+    /* header */
+
     .header {
         justify-content: space-around;
     }
@@ -454,7 +464,68 @@ body {
 
     .menu span {
         margin-right: 6rem;
-    }    
+    }
+
+    /* carousel */
+    
+    .carousel-item img {
+        height: 800px;
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        margin-bottom: 1rem;
+        right: 15%;
+        left: 15%;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .carousel-caption p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .boton {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .boton a {
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 12px;
+        margin: 0.5rem;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(41, 177, 70);
+        font-size: 1.5rem;
+    }
+    
+    .boton a:first-child {
+        background-color: initial;
+    }
+    
+    .boton a:last-child:hover {
+        color: white;
+        animation: pulse;
+        animation-duration: 2s;
+        background-color: rgb(44, 185, 74);
+    }
+    
+    .boton a:first-child:hover {
+        color: white;
+        animation: pulse;
+        animation-duration: 2s;
+        background-color: rgba(32, 36, 37, 0.2)
+    }
+    
 
     /* formulario */
 
@@ -551,7 +622,7 @@ body {
     }
 
     .img1 p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .links1 {
