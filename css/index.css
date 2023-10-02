@@ -690,6 +690,11 @@ body {
 
     }
 
+    .img1 img{
+        width: 120px;
+        height: 60px;
+    }
+
     .img1 p {
         font-size: 1.5rem;
     }
