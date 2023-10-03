@@ -280,7 +280,7 @@ body {
     font-size: 1.5rem;
     width: fit-content;
     display: inline-block;
-    margin: 0 2rem;
+    margin: 0 1.4rem;
 }
 
 .bs a:hover {
@@ -339,7 +339,7 @@ body {
     margin: 0;
 }
 
-.sobre textarea {
+.sobre input {
     width: 935px;
     padding: 1.2rem 0 7rem 0.6rem;
     font-size: 1rem;
@@ -352,7 +352,6 @@ body {
     font-size: 1rem;
     margin: 0;
     margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
 }
 
 #send {
@@ -546,7 +545,7 @@ body {
     /* formulario */
 
     .formulario {
-        height: 540px;
+        height: 520px;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -590,8 +589,8 @@ body {
         margin: 0;
     }
 
-    .sobre textarea {
-        width: 94vw;
+    .sobre input {
+        width: 94.5vw;
         margin-right: 0;
     }
 
@@ -882,7 +881,7 @@ body {
         margin: 0;
     }
 
-    .sobre textarea {
+    .sobre input {
         width: 65vw;
         margin-right: 0;
         margin-bottom: 0;
