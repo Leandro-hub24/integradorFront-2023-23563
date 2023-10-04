@@ -1,4 +1,3 @@
-// Menu
 
 let enlacesHeader = document.querySelector(".links1")
 /* let semaforo = true; */

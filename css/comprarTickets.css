@@ -51,10 +51,12 @@ body {
 
 .btn {
     background-color: rgba(150, 201, 62, 1);
+    color: white;
 }
 
 .btn:hover {
     background-color: rgb(143, 190, 60);
+    color: white;
 }
 
 /* footer */
