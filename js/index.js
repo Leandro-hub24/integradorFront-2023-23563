@@ -21,3 +21,18 @@ document.querySelector(".menu > span").addEventListener("click", function(){
 document.querySelector(".links1 > span").addEventListener("click", function(){
     enlacesHeader.classList.toggle("links2")
 })
+
+let est= document.getElementById("estudiante")
+let tra = document.getElementById("trainee")
+let jun = document.getElementById("junior")
+let sel = document.getElementById("select")
+
+est.addEventListener("click", function(){
+    sel.value = "1"
+})
+tra.addEventListener("click", function(){
+    sel.value = "2"
+})
+jun.addEventListener("click", function(){
+    sel.value = "3"
+})

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador</title>
+    <link rel="shortcut icon" href="./img/">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/comprarTickets.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <div class="img1">
+            <img src="./img/codoacodo.png" alt="">
+            <p>Conf Bs As</p>
+        </div>
+
+        <div class="links1">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+            <a href="#" style="color: white;">La conferencia</a>
+            <a href="#">Los oradores</a>
+            <a href="#">El lugar y la fecha</a>
+            <a href="#">Conviértete en orador</a>
+            <a href="#" style="color: rgba(41, 161, 71, 1);">Comprar tickets</a>
+        </div>
+
+        <div class="menu">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+    </div>
+
+    <!-- formulario compras -->
+
+    <div class="formCompra">
+        <div class="tiposTickets">
+            <div class="ticket" id="estudiante" style="background-color: aquamarine;">
+                <h2>Estudiante</h2>
+                <p>Tiene un descuento del</p>
+                <p>80%</p>
+                <p>*Presentar documentación</p>
+            </div>
+            <div class="ticket" id="trainee" style="background-color: aquamarine;">
+                <h2>Trainee</h2>
+                <p>Tiene un descuento del</p>
+                <p>50%</p>
+                <p>*Presentar documentación</p>
+            </div>
+            <div class="ticket" id="junior" style="background-color: aquamarine;">
+                <h2>Junior</h2>
+                <p>Tiene un descuento del</p>
+                <p>15%</p>
+                <p>*Presentar documentación</p>
+            </div>
+        </div>
+
+        <div class="formTickets">
+            <p class="text-center mt-3 mb-0">VENTA</p>
+            <h2 class="text-center m-2 p-1 fw-semibold">VALOR DE TICKET $200</h2>
+            <form class="w-100  mx-auto">
+                <div class="row ">
+                    <div class="col-md p-2">
+                        <label for="name" class="p-2">Nombre:</label>
+                        <input type="text" class="form-control name" placeholder="Nombre" aria-label="First name"
+                            id="name" required>
+                    </div>
+                    <div class="col-md p-2">
+                        <label for="lastName" class="p-2">Apellido:</label>
+                        <input type="text" class="form-control surname" placeholder="Apellido" aria-label="Last name"
+                            id="lastName" required>
+                    </div>
+                    <div class="row p-2 mx-auto">
+                        <label for="mail" class="p-2">Correo:</label>
+                        <input type="text" class="form-control email" placeholder="Correo" aria-label="Mail" id="mail"
+                            required>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <label for="items" class="p-2">Cantidad:</label>
+                        <input type="text" class="form-control cantidad" placeholder="Cantidad" aria-label="Items"
+                            id="items" required>
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <label for="select" class="p-2">Categoria:</label>
+                        <select class="form-select " aria-label="Default select example" id="select" required>
+                            <option value="1" id="uno">Estudiante</option>
+                            <option value="2" id="dos">Trainee</option>
+                            <option value="3" id="tres">Junior</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 rounded mx-auto blue d-flex align-items-center">
+                        <p class="p-2 m-0 total">Total a pagar: $</p>
+                    </div>
+
+                    <div class="col-md-6 p-2">
+                        <input type="reset" class="btn btn-success green2 border-0 fw-bold w-100" value="Borrar">
+                    </div>
+                    <div class="col-md-6 p-2">
+                        <input type="submit" class="btn btn-success green2 border-0 fw-bold w-100 resume"
+                            value="Resumen">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div>
+            <a href="">Preguntas<br> frecuentes</a>
+            <a href="">Contáctanos</a>
+            <a href="">Prensa</a>
+            <a href="">Conferencias</a>
+            <a href="">Términos y <br>condiciones</a>
+            <a href="">Privacidad</a>
+            <a href="">Estudiantes</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
