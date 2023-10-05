@@ -21,7 +21,7 @@ document.querySelector(".links1 > span").addEventListener("click", function(){
     enlacesHeader.classList.toggle("links2")
 })
 
-let est= document.getElementById("estudiante")
+let est = document.getElementById("estudiante")
 let tra = document.getElementById("trainee")
 let jun = document.getElementById("junior")
 let sel = document.getElementById("select")
@@ -35,3 +35,13 @@ tra.addEventListener("click", function(){
 jun.addEventListener("click", function(){
     sel.value = "3"
 })
+
+const pre = 1000;
+let cant = document.getElementById("items")
+let val = sel.value
+let tot = document.getElementById("total") 
+
+if(val == "1"){
+let total = (pre*0.2)*cant
+tot.innerHTML = total
+}
