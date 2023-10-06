@@ -38,10 +38,10 @@ est.addEventListener("click", function () {
     cant = cantidad.value
     if (cant != "") {
         total = (pre * 0.2) * cant
-        tot.textContent = `${total}`
+        tot.innerHTML = `${total}`
     }
     if (cant == "") {
-        tot.textContent = "0"
+        tot.innerHTML = "0"
     }
 })
 
@@ -50,10 +50,10 @@ tra.addEventListener("click", function () {
     cant = cantidad.value
     if (cant != "") {
         total = (pre * 0.5) * cant
-        tot.textContent = `${total}`
+        tot.innerHTML = `${total}`
     }
     if (cant == "") {
-        tot.textContent = "0"
+        tot.innerHTML = "0"
     }
 })
 
@@ -62,10 +62,10 @@ jun.addEventListener("click", function () {
     cant = cantidad.value
     if (cant != "") {
         total = (pre * 0.85) * cant
-        tot.textContent = `${total}`
+        tot.innerHTML = `${total}`
     }
     if (cant == "") {
-        tot.textContent = "0"
+        tot.innerHTML = "0"
     }
 })
 
@@ -76,21 +76,26 @@ cantidad.addEventListener("input", (e) => {
     val = sel.value
     if (val == "1" && cant != "") {
         total = (pre * 0.2) * cant
-        tot.textContent = `${total}`
+        tot.innerHTML = `${total}`
     }
 
     if (val == "2" && cant != "") {
         total = (pre * 0.5) * cant
-        tot.textContent = `${total}`
+        tot.innerHTML = `${total}`
     }
 
     if (val == "3" && cant != "") {
         total = (pre * 0.85) * cant
-        tot.textContent = `${total}`
+        tot.innerHTML = `${total}`
     }
 
     if (cant == "") {
-        tot.textContent = "0"
+        tot.innerHTML = "0"
+    }
+
+    if (isNaN(cant)){
+        tot.innerHTML = "0"
+        alert("Ingrese un número por favor")
     }
 })
 
@@ -100,21 +105,25 @@ sel.addEventListener("change", (e) => {
         val = e.target.value
         if (val == "1" && cant != "") {
             total = (pre * 0.2) * cant
-            tot.textContent = `${total}`
+            tot.innerHTML = `${total}`
         }
 
         if (val == "2" && cant != "") {
             total = (pre * 0.5) * cant
-            tot.textContent = `${total}`
+            tot.innerHTML = `${total}`
         }
 
         if (val == "3" && cant != "") {
             total = (pre * 0.85) * cant
-            tot.textContent = `${total}`
+            tot.innerHTML = `${total}`
         }
 
         if (cant == "") {
-            tot.textContent = "0"
+            tot.innerHTML = "0"
         }
     }
+})
+
+document.getElementById("delete").addEventListener("click", (e) => {
+        tot.innerHTML = "0"
 })
