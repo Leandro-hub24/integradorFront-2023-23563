@@ -43,6 +43,12 @@ est.addEventListener("click", function () {
     if (cant == "") {
         tot.innerHTML = "0"
     }
+
+    est.classList.toggle("vibrate")
+
+    setTimeout(() => {
+        est.classList.toggle("vibrate");
+    }, 2000);
 })
 
 tra.addEventListener("click", function () {
@@ -55,6 +61,12 @@ tra.addEventListener("click", function () {
     if (cant == "") {
         tot.innerHTML = "0"
     }
+    
+    tra.classList.toggle("vibrate")
+
+    setTimeout(() => {
+        tra.classList.toggle("vibrate");
+    }, 2000);
 })
 
 jun.addEventListener("click", function () {
@@ -67,6 +79,13 @@ jun.addEventListener("click", function () {
     if (cant == "") {
         tot.innerHTML = "0"
     }
+
+    jun.classList.toggle("vibrate")
+
+    setTimeout(() => {
+        jun.classList.toggle("vibrate");
+    }, 2000);
+
 })
 
 
@@ -93,7 +112,7 @@ cantidad.addEventListener("input", (e) => {
         tot.innerHTML = "0"
     }
 
-    if (isNaN(cant)){
+    if (isNaN(cant)) {
         tot.innerHTML = "0"
         alert("Ingrese un número por favor")
     }
@@ -125,5 +144,5 @@ sel.addEventListener("change", (e) => {
 })
 
 document.getElementById("delete").addEventListener("click", (e) => {
-        tot.innerHTML = "0"
+    tot.innerHTML = "0"
 })
