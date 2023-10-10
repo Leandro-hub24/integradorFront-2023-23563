@@ -23,7 +23,7 @@ body {
 
 .tiposTickets {
     height: 38%;
-    width: 60%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -37,6 +37,7 @@ body {
     border: 2px solid rgba(223, 223, 223, 1);
     border-radius: 10px;
     padding: 1rem;
+    background-color: rgb(255, 235, 0);
 }
 
 .ticket:hover {
@@ -65,7 +66,50 @@ body {
     height: 9vh;
 }
 
+@media screen and (max-width: 1300px){
+
+    /* formulario compras */
+
+    .tiposTickets{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1186px) {
+
+    /* formulario compras */
+
+    .tiposTickets{
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 800px) {
+
+    /* formulario compras */
+
+    .formCompra{
+        height: auto;
+    }
+
+    .tiposTickets{
+        flex-direction: column;
+    }
+
+    .ticket{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .ticket:first-child{
+        margin-top: 2rem;
+    }
+
+    .formTickets {
+        margin-bottom: 2rem;
+    }
+
+    /* footer */
 
     .footer {
         height: 500px;
