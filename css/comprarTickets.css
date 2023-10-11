@@ -38,11 +38,16 @@ body {
     border-radius: 10px;
     padding: 1rem;
     background-color: rgb(255, 235, 0);
+    color: black;
 }
 
 .ticket:hover {
     cursor: pointer;
     box-shadow: 0px 0px 15px rgb(197, 197, 197);
+}
+
+.linkT {
+    text-decoration: none;
 }
 
 .formTickets {
