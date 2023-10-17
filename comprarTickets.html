@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/comprarTickets.css">
+
 </head>
 
 <body>
@@ -81,7 +82,7 @@
         <div class="formTickets" id="formTi">
             <p class="text-center mt-3 mb-0">VENTA</p>
             <h2 class="text-center m-2 p-1 fw-semibold">VALOR DE TICKET $1000</h2>
-            <form class="w-100  mx-auto">
+            <form class="w-100  mx-auto" action="" method="get">
                 <div class="row ">
                     <div class="col-md p-2">
                         <label for="name" class="p-2">Nombre:</label>
@@ -120,7 +121,7 @@
                         <input type="reset" class="btn fw-bold w-100" value="Borrar" id="delete">
                     </div>
                     <div class="col-md-6 p-2">
-                        <input type="submit" class="btn fw-bold w-100 resume" value="Resumen">
+                        <input type="submit" class="btn fw-bold w-100 resume" value="Resumen" id="resum" formtarget="_self">
                     </div>
                 </div>
             </form>

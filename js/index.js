@@ -61,7 +61,7 @@ tra.addEventListener("click", function () {
     if (cant == "") {
         tot.innerHTML = "0"
     }
-    
+
     tra.classList.toggle("vibrate")
 
     setTimeout(() => {
@@ -146,3 +146,25 @@ sel.addEventListener("change", (e) => {
 document.getElementById("delete").addEventListener("click", (e) => {
     tot.innerHTML = "0"
 })
+
+let nombre = document.getElementById("name")
+let apellido = document.getElementById("lastName")
+let mail = document.getElementById("mail")
+let nom = nombre.value
+let ape = apellido.value
+let ma = mail.value
+
+document.getElementById("resum").addEventListener("click", (e) => {
+    nom = nombre.value
+    ape = apellido.value
+    ma = mail.value
+    if (nom != "" && ape != "" && ma != "" && cant != "") {
+        let opcion = confirm("¿Desea realizar la compra?")
+    }
+
+    if (opcion == "true"){
+
+    }
+})
+
+
