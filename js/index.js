@@ -153,18 +153,27 @@ let mail = document.getElementById("mail")
 let nom = nombre.value
 let ape = apellido.value
 let ma = mail.value
+let mensaje = document.querySelector(".mensaje")
 
 document.getElementById("resum").addEventListener("click", (e) => {
     nom = nombre.value
     ape = apellido.value
     ma = mail.value
-    if (nom != "" && ape != "" && ma != "" && cant != "") {
-        let opcion = confirm("¿Desea realizar la compra?")
-    }
-
-    if (opcion == "true"){
-
-    }
+    document.getElementById("message").innerHTML = `Sr/a ${nom}, confirme la compra de ${cant} tickets.`
+    document.getElementById("valorT").innerHTML = `${total}`
+    /* mensaje.classList.toggle("show") */
 })
 
+function resetForm() {
+    nombre.value = "";
+    apellido.value = "";
+    mail.value = "";
+    cantidad.value = "";
+    sel.value = 1;
+    tot.innerHTML = "0"
+    mensaje.classList.toggle("show")
+}
 
+function comprar() {
+    let m = 2+2
+}
