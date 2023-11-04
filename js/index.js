@@ -114,6 +114,7 @@ cantidad.addEventListener("input", (e) => {
 
     if (isNaN(cant)) {
         tot.innerHTML = "0"
+        cantidad.value = 0
         alert("Ingrese un número por favor")
     }
 })
@@ -153,16 +154,6 @@ let mail = document.getElementById("mail")
 let nom = nombre.value
 let ape = apellido.value
 let ma = mail.value
-let mensaje = document.querySelector(".mensaje")
-
-document.getElementById("resum").addEventListener("click", (e) => {
-    nom = nombre.value
-    ape = apellido.value
-    ma = mail.value
-    document.getElementById("message").innerHTML = `Sr/a ${nom}, confirme la compra de ${cant} tickets.`
-    document.getElementById("valorT").innerHTML = `${total}`
-    /* mensaje.classList.toggle("show") */
-})
 
 function resetForm() {
     nombre.value = "";
@@ -177,3 +168,25 @@ function resetForm() {
 function comprar() {
     let m = 2+2
 }
+
+
+(function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+

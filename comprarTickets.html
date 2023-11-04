@@ -49,15 +49,6 @@
 
     <!-- formulario compras -->
 
-    <div class="mensaje">
-        <p id="message"></p>
-        <p>Total a pagar: <span id="valorT">0</span>$</p>
-        <div class="confirmar">
-            <button class="bCon" id="si" type="button" onclick="comprar()">Si</button>
-            <button class="bCon" id="no" type="button" onclick="resetForm()">No</button>
-        </div>
-    </div>
-
     <div class="formCompra">
         <div class="tiposTickets">
             <a href="#formTi" class="linkT">
@@ -91,7 +82,7 @@
         <div class="formTickets" id="formTi">
             <p class="text-center mt-3 mb-0">VENTA</p>
             <h2 class="text-center m-2 p-1 fw-semibold">VALOR DE TICKET $1000</h2>
-            <form class="w-100  mx-auto" action="" method="get">
+            <form class="w-100  mx-auto needs-validation" novalidate action="" method="get">
                 <div class="row ">
                     <div class="col-md p-2">
                         <label for="name" class="p-2">Nombre:</label>
@@ -136,8 +127,6 @@
             </form>
         </div>
     </div>
-
-
 
     <!-- footer -->
     <div class="footer">
