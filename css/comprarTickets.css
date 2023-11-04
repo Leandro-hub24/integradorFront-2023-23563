@@ -112,6 +112,11 @@ body {
     color: white;
 }
 
+.total {
+    background-color: rgba(150, 201, 62, 1);
+    border-radius: 5px;
+}
+
 /* footer */
 
 .footer {
